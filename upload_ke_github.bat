@@ -10,7 +10,7 @@ echo.
 
 cd /d "%~dp0"
 
-:: 1. Deteksi Git di berbagai lokasi umum
+:: 1. Deteksi Git di berbagai lokasi instalasi umum Windows
 if exist "C:\Program Files\Git\cmd\git.exe" (
     set "PATH=C:\Program Files\Git\cmd;%PATH%"
 )
@@ -31,15 +31,16 @@ if not exist ".git" (
     git branch -M main
 )
 
-:: 3. Pastikan identitas Git (name & email) terkonfigurasi
+:: 3. Pastikan identitas Git terkonfigurasi di repository
 git config user.name >nul 2>nul
 if %errorlevel% neq 0 (
-    echo [INFO] Mengatur identitas Git default lokal...
+    echo [INFO] Menyetel nama pengembang default...
     git config user.name "Pengembang SIPERIS"
 )
 
 git config user.email >nul 2>nul
 if %errorlevel% neq 0 (
+    echo [INFO] Menyetel email pengembang default...
     git config user.email "pengembang@siperis.local"
 )
 
@@ -49,13 +50,15 @@ if %errorlevel% equ 0 goto :DO_STAGE
 
 echo [INFO] Repositori remote GitHub belum terhubung.
 echo.
-echo Langkah mudah:
-echo 1. Buka browser: https://github.com/new
-echo 2. Buat repositori baru (contoh nama: siperis)
-echo 3. Salin URL repositori tersebut (contoh: https://github.com/username/siperis.git)
+echo Langkah mudah membuat repositori GitHub:
+echo 1. Buka browser Anda: https://github.com/new
+echo 2. Buat repositori baru (misal nama: siperis)
+echo 3. Salin URL repositori (misal: https://github.com/username/siperis.git)
 echo.
+set "REPO_URL="
 set /p REPO_URL="Tempelkan URL Repositori GitHub Anda: "
 
+if not defined REPO_URL goto :EMPTY_URL
 if "%REPO_URL%"=="" goto :EMPTY_URL
 
 git remote add origin %REPO_URL%
@@ -69,18 +72,14 @@ git add .
 
 echo.
 echo [2/3] Menyimpan commit pembaruan...
-git commit -m "Auto deploy update %date% %time%"
-if %errorlevel% equ 0 (
-    echo [OK] Perubahan berkas berhasil di-commit.
-) else (
-    echo [INFO] Berkas sudah dalam versi terbaru (tidak ada perubahan baru).
-)
+git commit -m "Auto deploy update %date% %time%" >nul 2>nul
+echo [OK] Berkas siap diunggah.
 
 echo.
 echo [3/3] Mengunggah ke GitHub branch main...
 echo -----------------------------------------------------------------------------
 echo PETUNJUK OTENTIKASI:
-echo Jika muncul pop-up browser GitHub, silakan klik 'Sign in with your browser'.
+echo Jika muncul pop-up browser GitHub, silakan login dengan browser Anda.
 echo Setelah push berhasil, Vercel akan otomatis mendeteksi dan men-deploy!
 echo -----------------------------------------------------------------------------
 echo.
@@ -90,7 +89,7 @@ git push -u origin main
 if %errorlevel% equ 0 goto :PUSH_SUCCESS
 
 echo.
-echo [INFO] Mencoba sinkronisasi branch remote (git pull --rebase)...
+echo [INFO] Mencoba sinkronisasi branch remote dengan git pull rebase...
 git pull origin main --rebase
 git push -u origin main
 if %errorlevel% equ 0 goto :PUSH_SUCCESS
