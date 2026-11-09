@@ -48,7 +48,7 @@ if "%PILIHAN%"=="6" goto :EXIT
 
 echo.
 echo [PILIHAN TIDAK VALID] Silakan masukkan angka antara 1 sampai 6.
-timeout /t 2 >nul
+ping -n 3 127.0.0.1 >nul
 goto :MENU
 timeout /t 2 >nul
 goto :MENU
@@ -148,5 +148,5 @@ goto :MENU
 :EXIT
 echo.
 echo Terima kasih telah menggunakan SIPERIS! Sampai jumpa.
-timeout /t 1 >nul
+ping -n 2 127.0.0.1 >nul
 exit /b 0
