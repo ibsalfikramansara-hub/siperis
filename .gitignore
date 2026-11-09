@@ -1,0 +1,62 @@
+# Dependensi
+node_modules/
+.pnp
+.pnp.js
+
+# Build Output
+dist/
+build/
+.vercel/
+
+# Database Lokal & Berkas Status Runtime (JANGAN di-push ke publik)
+perizinan.db
+perizinan.db.tmp
+perizinan.db.bak
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Environment Variables & Kunci Rahasia
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log, Error & Output Server
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+server.out
+server.err
+
+# Folder Temporary & Scratchpad
+scratch/
+tmp/
+temp/
+.tmp/
+
+# Executable & Tunnel Binaries
+cloudflared.exe
+*.exe
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Python / Django (jika ada lingkungan python)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env/

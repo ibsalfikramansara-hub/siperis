@@ -1,0 +1,618 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "nis": "1001",
+      "username": "1001",
+      "password": "95995523222f8865ef8d0665c68897e0:dc3104f08fa1660a37d8bfe8c18753ef9f494e0740d870787544bee50d047c4c4129ef0b2536b61a81664e3031ae61a083f383c1c8be63cd41ea78caa990aea3",
+      "nama": "Ahmad Siswa",
+      "role": "siswa",
+      "kelas": "X RPL 1",
+      "nisn": "0001",
+      "gender": "L",
+      "foto": ""
+    },
+    {
+      "id": "u2",
+      "nis": "1002",
+      "username": "1002",
+      "password": "1de681cdcd8057b69911f5d3c4e6e0ec:4a8548cf1e0c004b265c8e692090f0cdf86fa635828ee38752578b1eb787509243d0299c8b422a6b3bd7748dab14482e013ac98f98e046c73985279f17624685",
+      "nama": "Budi Siswa",
+      "role": "siswa",
+      "kelas": "X RPL 1",
+      "nisn": "0002",
+      "gender": "L",
+      "foto": ""
+    },
+    {
+      "id": "u3",
+      "nis": "1003",
+      "username": "1003",
+      "password": "b1599459762b2ea1444eefb4d4c0189c:bf46e62e7ced0230f71751b9feb5df9e65fb4973aaa4b19081ca55ae002830251a5c7b973ccb8903ce3122043e131f1b0f4ba453dd5f47e1bfacaae5b1a09cc9",
+      "nama": "Citra Siswa",
+      "role": "siswa",
+      "kelas": "XI TKJ 1",
+      "nisn": "0003",
+      "gender": "P",
+      "foto": ""
+    },
+    {
+      "id": "u4",
+      "nis": "2001",
+      "username": "piket01",
+      "password": "22f2fae0f2277b73ab7ad5a225eabff4:d2d9bff5fa82a1232939bb9a1bb94deb2413cabd4d2a6176d7403e3998054e14e006563c7148f394758bd2fc907c91af43e2ba1945e75395d9b24478cb5903a4",
+      "nama": "Pak Piket",
+      "role": "piket",
+      "nip": "NP-01"
+    },
+    {
+      "id": "u5",
+      "nis": "2002",
+      "username": "bk01",
+      "password": "9e1c1a4bded4a8c34caf3270df56789d:02067f14f9ca919fb649783d0edaa7d2b575eea0a5ecca19635a685c99200397fd4feaff2c1529362833530005d97829dadadef9508efca3f43f8ec7485c865a",
+      "nama": "Bu BK",
+      "role": "bk",
+      "nip": "NP-02"
+    },
+    {
+      "id": "u6",
+      "nis": "2003",
+      "username": "wali01",
+      "password": "4ac3d1efa5331611e68e74a3fca59f51:60b6ea1ad0ec8f23bf519b657c566414cbfcce08b79ccf14e663af29ea2eadaf3ccaba834a92a2444eb9b43a012ee0936d5d005e938c4a1557325c1af525236b",
+      "nama": "Bu Wali Kelas",
+      "role": "wali_kelas",
+      "nip": "NP-03",
+      "kelas": "X RPL 1"
+    },
+    {
+      "id": "u7",
+      "nis": "2004",
+      "username": "satpam01",
+      "password": "2ea803a9bf6857c507b647cd27619e3c:9b34a95f659c7d027b84ceffdcd71ba5fe69d4e96c29a19e6ca260fb5c664f0adec0aa68956344a1938783bf513e6a0f060b08448018230ee7d9806f6b87fdf7",
+      "nama": "Pak Satpam",
+      "role": "satpam",
+      "nip": "NP-04"
+    },
+    {
+      "id": "u8",
+      "nis": "2005",
+      "username": "admin01",
+      "password": "25824cb5388296f054de5d2b640efc56:977a1f43fd50b50e9c7ffc95a12eb155de29feaea7f7e6223d3a87d1c7381e6211a1c063cd5cfa0f3dacd7fc11311c6c8a653eda4e6447e447621d015a2c4f2c",
+      "nama": "Admin TU",
+      "role": "admin",
+      "nip": "NP-05"
+    },
+    {
+      "id": "u1793885158668",
+      "username": "siswa04",
+      "nis": "9004",
+      "nisn": "",
+      "nama": "Siswa Baru",
+      "password": "e1f6836f62bf926b74c64fd3dc6cbc48:0a2e6873d32fa6f46f297de0be0773b5f05ef1960694ba4abe80af3fc4006c676f48e4ff97e37a4b505a5d3bb8208e82bcefd5aed2b813208f90dddacf104b9a",
+      "role": "siswa",
+      "kelas": "X RPL 1",
+      "status": "aktif"
+    }
+  ],
+  "kelas": [
+    {
+      "id": "k1",
+      "nama": "X RPL 1",
+      "wali_kelas_id": "u6"
+    },
+    {
+      "id": "k2",
+      "nama": "XI TKJ 1",
+      "wali_kelas_id": "u6"
+    },
+    {
+      "id": "k3",
+      "nama": "X TKJ 2",
+      "wali_kelas_id": "u6"
+    }
+  ],
+  "kategori": [
+    {
+      "id": "kat1",
+      "nama": "Umum",
+      "verifikator": "piket",
+      "maks_durasi_menit": 60
+    },
+    {
+      "id": "kat2",
+      "nama": "Lomba",
+      "verifikator": "piket",
+      "maks_durasi_menit": 180
+    },
+    {
+      "id": "kat3",
+      "nama": "Beli Perlengkapan",
+      "verifikator": "piket",
+      "maks_durasi_menit": 60
+    },
+    {
+      "id": "kat4",
+      "nama": "Bimbingan",
+      "verifikator": "bk",
+      "maks_durasi_menit": 60
+    },
+    {
+      "id": "kat5",
+      "nama": "Konseling",
+      "verifikator": "bk",
+      "maks_durasi_menit": 60
+    },
+    {
+      "id": "kat6",
+      "nama": "Masalah Pribadi",
+      "verifikator": "bk",
+      "maks_durasi_menit": 60
+    }
+  ],
+  "pengajuan": [
+    {
+      "id": "izin-automated-1794246314203",
+      "siswa_id": "u1",
+      "siswa_nama": "Ahmad Siswa",
+      "kelas": "X RPL 1",
+      "kategori_id": "kat1",
+      "kategori_nama": "Umum",
+      "tanggal": "2026-11-09",
+      "jam_mulai": "09:00",
+      "estimasi_menit": 45,
+      "keperluan": "Pemeriksaan kesehatan di klinik",
+      "status": "selesai",
+      "kode": "IZN-AEJXLE",
+      "catatan_piket": "ACC Petugas Piket",
+      "catatan_bk": "",
+      "catatan_wali": "ACC Wali",
+      "created_at": "2026-11-09T17:45:14.203Z",
+      "waktu_keluar_aktual": "2026-11-09T17:45:14.211Z",
+      "waktu_masuk_aktual": "2026-11-09T17:45:14.212Z"
+    },
+    {
+      "id": "izin-automated-1794246190984",
+      "siswa_id": "u1",
+      "siswa_nama": "Ahmad Siswa",
+      "kelas": "X RPL 1",
+      "kategori_id": "kat1",
+      "kategori_nama": "Umum",
+      "tanggal": "2026-11-09",
+      "jam_mulai": "09:00",
+      "estimasi_menit": 45,
+      "keperluan": "Pemeriksaan kesehatan di klinik",
+      "status": "selesai",
+      "kode": "IZN-HC8INP",
+      "catatan_piket": "ACC Petugas Piket",
+      "catatan_bk": "",
+      "catatan_wali": "ACC Wali",
+      "created_at": "2026-11-09T17:43:10.984Z",
+      "waktu_keluar_aktual": "2026-11-09T17:43:10.991Z",
+      "waktu_masuk_aktual": "2026-11-09T17:43:10.993Z"
+    },
+    {
+      "id": "izin-automated-1794245779019",
+      "siswa_id": "u1",
+      "siswa_nama": "Ahmad Siswa",
+      "kelas": "X RPL 1",
+      "kategori_id": "kat1",
+      "kategori_nama": "Umum",
+      "tanggal": "2026-11-09",
+      "jam_mulai": "09:00",
+      "estimasi_menit": 45,
+      "keperluan": "Pemeriksaan kesehatan di klinik",
+      "status": "selesai",
+      "kode": "IZN-E7I59L",
+      "catatan_piket": "ACC Petugas Piket",
+      "catatan_bk": "",
+      "catatan_wali": "ACC Wali",
+      "created_at": "2026-11-09T17:36:19.019Z",
+      "waktu_keluar_aktual": "2026-11-09T17:36:19.029Z",
+      "waktu_masuk_aktual": "2026-11-09T17:36:19.030Z"
+    },
+    {
+      "id": "izin-test-1794148204376",
+      "siswa_id": "u1",
+      "siswa_nama": "Ahmad Siswa",
+      "kelas": "X RPL 1",
+      "kategori_id": "kat-1",
+      "kategori_nama": "Urusan Keluarga",
+      "tanggal": "2026-11-08",
+      "jam_mulai": "08:30",
+      "estimasi_menit": 60,
+      "keperluan": "Kepentingan keluarga mendesak",
+      "status": "selesai",
+      "kode": "IZN-TEST485",
+      "created_at": "2026-11-08T14:30:04.376Z",
+      "catatan_piket": "ACC Piket",
+      "catatan_wali": "ACC Wali",
+      "waktu_keluar_aktual": "2026-11-08T14:30:04.387Z",
+      "waktu_masuk_aktual": "2026-11-08T14:30:04.389Z"
+    },
+    {
+      "id": "izin-test-1794147635724",
+      "siswa_id": "u1",
+      "siswa_nama": "Ahmad Siswa",
+      "kelas": "X RPL 1",
+      "kategori_id": "kat-1",
+      "kategori_nama": "Urusan Keluarga",
+      "tanggal": "2026-11-08",
+      "jam_mulai": "08:30",
+      "estimasi_menit": 60,
+      "keperluan": "Kepentingan keluarga mendesak",
+      "status": "selesai",
+      "kode": "IZN-TEST98",
+      "created_at": "2026-11-08T14:20:35.724Z",
+      "catatan_piket": "ACC Piket",
+      "catatan_wali": "ACC Wali",
+      "waktu_keluar_aktual": "2026-11-08T14:20:35.734Z",
+      "waktu_masuk_aktual": "2026-11-08T14:20:35.736Z"
+    },
+    {
+      "id": "izin-1793884885541-ac8e",
+      "siswa_id": "u1",
+      "siswa_nama": "Ahmad Siswa",
+      "kelas": "X RPL 1",
+      "kategori_id": "kat2",
+      "kategori_nama": "Lomba",
+      "tanggal": "2026-11-06",
+      "jam_mulai": "09:00",
+      "estimasi_menit": 120,
+      "keperluan": "Lomba robotik",
+      "lampiran": "",
+      "status": "selesai",
+      "kode": "IZN-VWD421",
+      "catatan_piket": "Disetujui Piket",
+      "catatan_bk": "",
+      "catatan_wali": "Disetujui Wali Kelas",
+      "created_at": "2026-11-05T13:21:25.539Z",
+      "waktu_keluar_aktual": "2026-11-05T13:23:02.740Z",
+      "waktu_masuk_aktual": "2026-11-05T13:23:17.626Z"
+    },
+    {
+      "id": "izin-1793884246267-kngo",
+      "siswa_id": "u1",
+      "siswa_nama": "Ahmad Siswa",
+      "kelas": "X RPL 1",
+      "kategori_id": "kat1",
+      "kategori_nama": "Umum",
+      "tanggal": "2026-11-05",
+      "jam_mulai": "09:00",
+      "estimasi_menit": 60,
+      "keperluan": "Beli alat tulis",
+      "lampiran": "",
+      "status": "selesai",
+      "kode": "IZN-HA8JQH",
+      "catatan_piket": "Disetujui Piket",
+      "catatan_bk": "",
+      "catatan_wali": "Disetujui Wali Kelas",
+      "created_at": "2026-11-05T13:10:46.266Z",
+      "waktu_keluar_aktual": "2026-11-05T13:12:53.237Z",
+      "waktu_masuk_aktual": "2026-11-05T13:12:58.962Z"
+    },
+    {
+      "id": "izin-1",
+      "siswa_id": "u1",
+      "siswa_nama": "Ahmad Siswa",
+      "kelas": "X RPL 1",
+      "kategori_id": "kat3",
+      "kategori_nama": "Beli Perlengkapan",
+      "tanggal": "2026-11-04",
+      "jam_mulai": "09:00",
+      "estimasi_menit": 60,
+      "keperluan": "Beli alat tulis",
+      "lampiran": "",
+      "status": "diajukan",
+      "kode": "",
+      "catatan_piket": "",
+      "catatan_bk": "",
+      "catatan_wali": "",
+      "created_at": "2026-11-04T08:00:00",
+      "waktu_keluar_aktual": "",
+      "waktu_masuk_aktual": ""
+    },
+    {
+      "id": "izin-2",
+      "siswa_id": "u3",
+      "siswa_nama": "Citra Siswa",
+      "kelas": "XI TKJ 1",
+      "kategori_id": "kat4",
+      "kategori_nama": "Bimbingan",
+      "tanggal": "2026-11-04",
+      "jam_mulai": "10:00",
+      "estimasi_menit": 60,
+      "keperluan": "Bimbingan konseling",
+      "lampiran": "",
+      "status": "menunggu_keluar",
+      "kode": "IZN-A1B2C3",
+      "catatan_piket": "",
+      "catatan_bk": "Disetujui",
+      "catatan_wali": "Disetujui",
+      "created_at": "2026-11-04T07:30:00",
+      "waktu_keluar_aktual": "",
+      "waktu_masuk_aktual": ""
+    },
+    {
+      "id": "izin-3",
+      "siswa_id": "u2",
+      "siswa_nama": "Budi Siswa",
+      "kelas": "X RPL 1",
+      "kategori_id": "kat2",
+      "kategori_nama": "Lomba",
+      "tanggal": "2026-11-04",
+      "jam_mulai": "08:00",
+      "estimasi_menit": 180,
+      "keperluan": "Lomba robotik",
+      "lampiran": "",
+      "status": "sudah_keluar",
+      "kode": "IZN-D4E5F6",
+      "catatan_piket": "Disetujui",
+      "catatan_bk": "",
+      "catatan_wali": "Disetujui",
+      "created_at": "2026-11-04T07:00:00",
+      "waktu_keluar_aktual": "2026-11-04T08:05:00",
+      "waktu_masuk_aktual": ""
+    }
+  ],
+  "auditTrail": [
+    {
+      "id": "a1793884246268",
+      "izin_id": "izin-1793884246267-kngo",
+      "actor": "Ahmad Siswa",
+      "role": "siswa",
+      "action": "Ajukan Izin",
+      "old_status": "-",
+      "new_status": "diajukan",
+      "at": "2026-11-05T13:10:46.266Z"
+    },
+    {
+      "id": "a1793884252127",
+      "izin_id": "izin-1793884246267-kngo",
+      "actor": "Pak Piket",
+      "role": "piket",
+      "action": "Update status",
+      "old_status": "diajukan",
+      "new_status": "diverifikasi_piket_bk",
+      "at": "2026-11-05T13:10:52.127Z"
+    },
+    {
+      "id": "a1793884353607",
+      "izin_id": "izin-1793884246267-kngo",
+      "actor": "Bu Wali Kelas",
+      "role": "wali_kelas",
+      "action": "Update status",
+      "old_status": "diverifikasi_piket_bk",
+      "new_status": "disetujui_wali_kelas",
+      "at": "2026-11-05T13:12:33.607Z"
+    },
+    {
+      "id": "a1793884367473",
+      "izin_id": "izin-1793884246267-kngo",
+      "actor": "Bu Wali Kelas",
+      "role": "wali_kelas",
+      "action": "Update status",
+      "old_status": "disetujui_wali_kelas",
+      "new_status": "menunggu_keluar",
+      "at": "2026-11-05T13:12:47.473Z"
+    },
+    {
+      "id": "a1793884373238",
+      "izin_id": "izin-1793884246267-kngo",
+      "actor": "Pak Satpam",
+      "role": "satpam",
+      "action": "Scan Keluar",
+      "old_status": "menunggu_keluar",
+      "new_status": "sudah_keluar",
+      "at": "2026-11-05T13:12:53.237Z"
+    },
+    {
+      "id": "a1793884378963",
+      "izin_id": "izin-1793884246267-kngo",
+      "actor": "Pak Satpam",
+      "role": "satpam",
+      "action": "Scan Masuk",
+      "old_status": "sudah_keluar",
+      "new_status": "selesai",
+      "at": "2026-11-05T13:12:58.962Z"
+    },
+    {
+      "id": "a1793884394612",
+      "izin_id": "izin-3",
+      "actor": "Pak Satpam",
+      "role": "satpam",
+      "action": "Notifikasi Terlambat",
+      "old_status": "sudah_keluar",
+      "new_status": "sudah_keluar",
+      "at": "2026-11-05T13:13:14.612Z",
+      "catatan": "Notifikasi dikirim ke Wali Kelas / BK / Orang Tua"
+    },
+    {
+      "id": "a1793884885543",
+      "izin_id": "izin-1793884885541-ac8e",
+      "actor": "Ahmad Siswa",
+      "role": "siswa",
+      "action": "Ajukan Izin",
+      "old_status": "-",
+      "new_status": "diajukan",
+      "at": "2026-11-05T13:21:25.539Z"
+    },
+    {
+      "id": "a1793884901534",
+      "izin_id": "izin-1793884885541-ac8e",
+      "actor": "Pak Piket",
+      "role": "piket",
+      "action": "Update status",
+      "old_status": "diajukan",
+      "new_status": "diverifikasi_piket_bk",
+      "at": "2026-11-05T13:21:41.534Z"
+    },
+    {
+      "id": "a1793884905163",
+      "izin_id": "izin-1793884885541-ac8e",
+      "actor": "Bu Wali Kelas",
+      "role": "wali_kelas",
+      "action": "Update status",
+      "old_status": "diverifikasi_piket_bk",
+      "new_status": "disetujui_wali_kelas",
+      "at": "2026-11-05T13:21:45.163Z"
+    },
+    {
+      "id": "a1793884976390",
+      "izin_id": "izin-1793884885541-ac8e",
+      "actor": "Bu Wali Kelas",
+      "role": "wali_kelas",
+      "action": "Update status",
+      "old_status": "disetujui_wali_kelas",
+      "new_status": "menunggu_keluar",
+      "at": "2026-11-05T13:22:56.390Z"
+    },
+    {
+      "id": "a1793884982741",
+      "izin_id": "izin-1793884885541-ac8e",
+      "actor": "Pak Satpam",
+      "role": "satpam",
+      "action": "Scan Keluar",
+      "old_status": "menunggu_keluar",
+      "new_status": "sudah_keluar",
+      "at": "2026-11-05T13:23:02.740Z"
+    },
+    {
+      "id": "a1793884997627",
+      "izin_id": "izin-1793884885541-ac8e",
+      "actor": "Pak Satpam",
+      "role": "satpam",
+      "action": "Scan Masuk",
+      "old_status": "sudah_keluar",
+      "new_status": "selesai",
+      "at": "2026-11-05T13:23:17.626Z"
+    },
+    {
+      "id": "a1793885006457",
+      "izin_id": "izin-1793884885541-ac8e",
+      "actor": "Pak Satpam",
+      "role": "satpam",
+      "action": "Update status",
+      "old_status": "selesai",
+      "new_status": "selesai",
+      "at": "2026-11-05T13:23:26.457Z"
+    },
+    {
+      "id": "a1793885048439",
+      "izin_id": "izin-1793884885541-ac8e",
+      "actor": "Pak Piket",
+      "role": "piket",
+      "action": "Update status",
+      "old_status": "selesai",
+      "new_status": "",
+      "at": "2026-11-05T13:24:08.440Z"
+    },
+    {
+      "id": "a1793885148034",
+      "izin_id": "izin-3",
+      "actor": "Pak Satpam",
+      "role": "satpam",
+      "action": "Notifikasi Terlambat",
+      "old_status": "sudah_keluar",
+      "new_status": "sudah_keluar",
+      "at": "2026-11-05T13:25:48.034Z",
+      "catatan": "Notifikasi dikirim ke Wali Kelas / BK / Orang Tua"
+    },
+    {
+      "id": "a-1794147635726",
+      "izin_id": "izin-test-1794147635724",
+      "actor": "Ahmad Siswa",
+      "role": "siswa",
+      "action": "Ajukan Izin",
+      "old_status": "-",
+      "new_status": "diajukan",
+      "at": "2026-11-08T14:20:35.726Z"
+    },
+    {
+      "id": "a-1794147635728",
+      "izin_id": "izin-test-1794147635724",
+      "actor": "Pak Piket",
+      "role": "piket",
+      "action": "Verifikasi Piket",
+      "old_status": "diajukan",
+      "new_status": "diverifikasi_piket_bk",
+      "at": "2026-11-08T14:20:35.728Z"
+    },
+    {
+      "id": "a-1794148204377",
+      "izin_id": "izin-test-1794148204376",
+      "actor": "Ahmad Siswa",
+      "role": "siswa",
+      "action": "Ajukan Izin",
+      "old_status": "-",
+      "new_status": "diajukan",
+      "at": "2026-11-08T14:30:04.378Z"
+    },
+    {
+      "id": "a-1794148204381",
+      "izin_id": "izin-test-1794148204376",
+      "actor": "Pak Piket",
+      "role": "piket",
+      "action": "Verifikasi Piket",
+      "old_status": "diajukan",
+      "new_status": "diverifikasi_piket_bk",
+      "at": "2026-11-08T14:30:04.381Z"
+    },
+    {
+      "id": "a-1794245779021",
+      "izin_id": "izin-automated-1794245779019",
+      "actor": "Ahmad Siswa",
+      "role": "siswa",
+      "action": "Ajukan Izin",
+      "old_status": "-",
+      "new_status": "diajukan",
+      "at": "2026-11-09T17:36:19.021Z"
+    },
+    {
+      "id": "a-1794246190985",
+      "izin_id": "izin-automated-1794246190984",
+      "actor": "Ahmad Siswa",
+      "role": "siswa",
+      "action": "Ajukan Izin",
+      "old_status": "-",
+      "new_status": "diajukan",
+      "at": "2026-11-09T17:43:10.985Z"
+    },
+    {
+      "id": "a-1794246314204",
+      "izin_id": "izin-automated-1794246314203",
+      "actor": "Ahmad Siswa",
+      "role": "siswa",
+      "action": "Ajukan Izin",
+      "old_status": "-",
+      "new_status": "diajukan",
+      "at": "2026-11-09T17:45:14.204Z"
+    }
+  ],
+  "settings": {
+    "idleTimeoutMenit": 30,
+    "batasTerlambatMenit": 15,
+    "jam_masuk": "06:30",
+    "jam_pulang": "16:00"
+  },
+  "pengumuman": [
+    {
+      "id": "f1",
+      "tanggal": "04 November 2026",
+      "judul": "Sistem Perizinan Siswa SISMEN v2.0 Resmi Diluncurkan",
+      "desc": "Assalamu'alaikum warahmatullahi wabarakatuh, Sehubungan dengan digitalisasi..."
+    },
+    {
+      "id": "f2",
+      "tanggal": "03 November 2026",
+      "judul": "Jadwal Jam Sekolah Semester Genap 2026/2027",
+      "desc": "Disampaikan kepada seluruh siswa dan orang tua bahwa jam masuk..."
+    },
+    {
+      "id": "f3",
+      "tanggal": "01 November 2026",
+      "judul": "Pendaftaran Beasiswa Cendekia Baznas Dalam Negeri Tahun 2026",
+      "desc": "Disampaikan dengan hormat, dalam rangka meningkatkan akses..."
+    }
+  ],
+  "tokens": []
+}
